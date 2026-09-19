@@ -3,8 +3,8 @@
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgbase=linux-surface
-pkgver=6.19.8.arch1
-pkgrel=3
+pkgver=7.2.4.arch1
+pkgrel=1
 pkgdesc='Linux'
 _shortver=${pkgver%.*}
 _fullver=${pkgver%.*}-${pkgver##*.}
@@ -56,50 +56,32 @@ source=(
   0012-surface-gpe.patch
   0013-cameras.patch
   0014-amd-gpio.patch
-  0015-rtc.patch
-  0016-hid-surface.patch
-  0017-dirtyfrag-xfrm-esp-avoid-in-place-decrypt-on-shared-skb-frags.patch
-  0018-dirtyfrag-rxrpc-Fix-potential-UAF-after-skb_unshare-failure.patch
-  0019-dirtyfrag-rxrpc-Fix-rxrpc_input_call_event-to-only-unshare-DAT.patch
-  0020-dirtyfrag-rxrpc-Fix-use-of-wrong-skb-when-comparing-queued-RES.patch
-  0021-dirtyfrag-rxrpc-only-handle-RESPONSE-during-service-challenge.patch
-  0022-dirtyfrag-rxrpc-Fix-conn-level-packet-handling-to-unshare-RESP.patch
-  0023-dirtyfrag-rxrpc-Fix-re-decryption-of-RESPONSE-packets.patch
-  0024-dirtyfrag-rxrpc-Also-unshare-DATA-RESPONSE-packets-when-paged-.patch
+  0015-hid-surface.patch
 )
 validpgpkeys=(
   'ABAF11C65A2970B130ABE3C479BE3E4300411886'  # Linus Torvalds
   '647F28654894E3BD457199BE38DBBDC86092693E'  # Greg Kroah-Hartman
   'A2FF3A36AAA56654109064AB19802F8B0D70FC30'  # Jan Alexander Steffens (heftig)
 )
-sha256sums=('4d1e35866e69aaef26812c1cc5651936faa5e360b5ef6a19c28fb19b6848ab4b'
-            'd0ce1ee11ca0bc6a817c3c17a2651076409bd9fd6c0ab9e744aae2131ab654ce'
+sha256sums=('SKIP'
+            '9b853f428724ae2edffd330745f47f9bcb6650b10872297686cf38f035f85134'
             '3732912dbdf6419df696eec4c40d8edfad90a529e9cfe09b365c2b558690f9b7'
             '008e37de7e6cf8b9479ef0f0f425a25092646e85d741aedd056e5ff3e1096361'
-            '5113eaf632692852082972ff881321428b060efd4ff0177c2ce3c72c64ad76e7'
-            'dbad1231a9a0a2bcf4f6567149e5b86f82f4bb29a3b3fa91543b1996e66353f4'
-            'a209e3e9c907a5b8803b841e1636eb18e849ff812f29fcff8ba57b140ccb5474'
-            '516babc082c6e21c1e842e5abdfd3e882c6f6e1039a4a909d68cd635100b95a3'
-            'ccc2f38598d9a49e19aa88d01c797654468b86f07beda4d355067a9d9083880e'
-            'e917bf758d93bdd3ee0836d4314849aada9a0902cd0161e1f357f71953221101'
-            '33871bca7d63230902b6c0e41460c295266fb3aaf31a57857666c55775efa560'
-            '32589bbccf6672e427f91cdc991be2c3d4270969763a79c6c1edef8f9c9ab5b5'
-            'd7b7856ef1693bb8633748e647f551d84a6dd2070abdc75340dd8bcba98eada7'
-            '5617c0fb8ae0db1de3865aafb65b21d7b5b5e5857d4baa34c1c17f2a2e502485'
-            '64509e957756d942d5561801123cf456e8caa1aa44bd69c2d5f97093c4830f9f'
-            'df547b8697f058fcfd9ae082a2ae4a87cd4ae5d7dae70129889da00219db4733'
-            'dbaddf5ed1ec7aec515867facd17a09e083289eb4185b3af4f3bc1d6c9bd1ad7'
-            '1d703ad95120df846d77b0c5338af1829119e2bfcac258ebedf0145ba02e22f3'
-            '76b91256a525c4f626802b5ad29ddb1a9477bc90001c9ea8c469ae77d07593fc'
-            '32b91e80ddc124dc7f31bbde65fcb18fa7a7f194f953ccfc8f14d630aac4ddc4'
-            'fac88ee98cfdfe25e408410e32182d1333ad70daf0d7393616062bc742ab16a9'
-            '49720fcc7dc3985a23f28690bf8617782e73c164f5b1faa5baad64d2914470cc'
-            '07daf409a43ae3eea6d3a7f0faa27de273dd1036220ebaf06327423508d154b8'
-            '293baa7fa7ea5a6c0eca70865242478640b02e45b336e541e7c2aca502d20ae8'
-            '780f99c5da46b2afacca860aa711342c654d66dbf8aa9a78575ec9061f5591e4'
-            'b8de9f82cf402f52c65a777b3944a153a47310a13ec8629a3b9f907d792bfbe6'
-            '0b7785bfb9b00326f5575e85f869c19e40a4d829267c7aded75df6bd532b622d'
-            '4fee526034c01a578577ea85a569ace805fbaf66e68d6bf4cab030aabc007d51')
+            '014bc285aeff599995077e4aa866b7b1e135219f8e98bd3cf728d15b6830bf45'
+            'eaf35c0640f079ec6b0eab5065565c7973ed134e479350aa90c313cc8075eaf3'
+            'f9ba511b4fae91e0ac8519967a67b02c96bed304fcda1e69474207e86885d945'
+            'c81392f0d2607d9a9d51d68130d9995af3c92404cd9d3992b001f67c16fe20ad'
+            'e69276be91afe9a10ca0931559c3815d456dba92286907c80dfc159a849936b6'
+            'b8e67be7f596435425ff78250e51463f9eb467b135b074f9701ee9024ebc855f'
+            '5ec565bcf02ec169e98c882c606facc5507df849e21c54ecdbc008b866b4cdd3'
+            'f1b3b45e31d066548cce7a653b3d4f2a9a1148f03f117008844c3be41c6d291a'
+            'a277d35e4fb0995feb71d7c859032640695b1781fb13056e0eba99b69d289a4d'
+            'a67f0b9f4479d891b0d73ba5337c1a8fbe0b01c5257db426fe5dc3aa60d61f3c'
+            '3c56f2147f55f5966bfb45f966dc43feebd12b8f0744ce762c1e2582256fd9bd'
+            '5d5c09e5e6a4519311106d40a61b96ec1db11128a71f31514c3ab19554e9f59f'
+            '8a2f2f192a967d317ad5e81542fece56c2431dd6a62fffa17b59d39cff511744'
+            'c20427b1faf7c584ccb52209950066c23f5cb0a0fcfa3bc18d1c9c14f45ed1b3'
+            'adfd181cb9c3be288102e1420ff3c8d64879f33c0a146067ef7b8015db575952')
 
 
 export KBUILD_BUILD_HOST=archlinux
