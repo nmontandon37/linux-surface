@@ -93,7 +93,7 @@ b2sums=('2214cebaf37149fce36324429aa56f7dde474cb86d87a670b596d69fcdcc0e98adacaec
         'SKIP'
         'SKIP'
         'SKIP'
-	'SKIP')
+		'SKIP')
 b2sums_x86_64=('7b0b12692a377195543ca9beadd416f819aa50b98b6b1e24e54177fa52a43a732ee38a0bd81a6f3605ca78dabc894d99d8653883cafa79e18475617cf10735cc')
 
 # https://www.kernel.org/pub/linux/kernel/v7.x/sha256sums.asc
@@ -117,8 +117,8 @@ sha256sums=('bb1b871ef95a8de10b3f7b7baf0e0d754abbf620f804b6caf860f226aa97647d'
             '5545b5442b3b753587428db458300b69059fb6277fe03119908f55e00eb66ed1'
             '4d18f2637e966f213d0af207594b53cdb804cd3176dd64ab8191a833a84336f0'
             'aaa4cc6cf50d60c77a2a644f677f273a81e43c5beed433b7b618e83e4d540881'
-            '2b22a47c32855e6729df1f37f85c05c11361d8a2ad37de8e21b632628c1d00d9')
-	    'SKIP'
+            '2b22a47c32855e6729df1f37f85c05c11361d8a2ad37de8e21b632628c1d00d9'
+			'SKIP')
 
 export KBUILD_BUILD_HOST=archlinux
 export KBUILD_BUILD_USER=$pkgbase
